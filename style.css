@@ -45,26 +45,45 @@ body {
 }
 
 .buttons button {
-    width: 120px;
-    height: 45px;
-    background-color: #8c52ff;
-    color: #fff;
+    flex: 1;
+    max-width: 130px;
+    padding: 12px 20px;
     border: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    border-radius: 5px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #2e557b, #497aa5);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    outline: none;
-}
-
-.buttons button:nth-last-child(2) {
-    background-color: #e35209;
-}
-
-.buttons button:nth-last-child(1) {
-    background-color: #f7df1e;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .buttons button:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(145deg, #468d3b, #78c15d);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#pause {
+    background: linear-gradient(145deg, #2e557b, #497aa5);
+    color: #ffffff;
+}
+
+#pause:hover {
+    background: linear-gradient(145deg, #bfa875, #b6810f);
+}
+
+#reset {
+    background: linear-gradient(145deg, #2e557b, #497aa5);
+    color: #ffffff;
+}
+
+#reset:hover {
+    background: linear-gradient(145deg, #935858, #ff7c7c);
 }
